@@ -8,6 +8,12 @@ namespace Demo_OOP_Session4.Interfaces
 {
     internal class MyType : IMyType // Implement 
     {
+        public int Id { get; set ; }
+
+        public void MyFun(int x)
+        {
+            Console.WriteLine($"Hello Route :  X = {x} , Id = {Id}");
+        }
 
     }
 }
