@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Demo_OOP_Session4.Interfaces
 {
-    internal class MyType : IMyType // Implement 
+    internal class SeriesByTwo : Iseries
     {
-        public int Id { get; set ; }
+        public int current { get ; set ; }
 
-        public void MyFun(int x)
+        public void GetNext()
         {
-            Console.WriteLine($"Hello Route :  X = {x} , Id = {Id}");
+            current += 2;
         }
-
     }
 }

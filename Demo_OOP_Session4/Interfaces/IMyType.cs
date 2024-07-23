@@ -10,10 +10,13 @@ namespace Demo_OOP_Session4.Interfaces
     {
         public int Id { get; set; }
 
-        public void MyFun (int x) 
-        {
-            Console.WriteLine($"Hello Route :  X = {X} , Id = {Id}");
+        public void MyFun(int x);
 
+
+        public void Print()
+        {
+            Console.WriteLine($"Hello  Default implemented method from interface");
         }
+
     }
 }
